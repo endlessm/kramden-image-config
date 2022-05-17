@@ -1,0 +1,19 @@
+# Kramden directories
+
+TARGET_PATH=/usr/local/share/desktop-directories
+
+mkdir -p ${TARGET_PATH}
+
+cat <<EOF > ${TARGET_PATH}/folder-learn.directory
+[Desktop Entry]
+Version=1.0
+Name=Learn
+Type=Directory
+EOF
+
+cat <<EOF > ${TARGET_PATH}/folder-health.directory
+[Desktop Entry]
+Version=1.0
+Name=Health
+Type=Directory
+EOF
