@@ -30,10 +30,13 @@ sudo ./eos-image-builder/eos-image-builder \
 
 The parameters have the following meanings:
 
-- `--localdir ./kramden-image-config`: load additional configuration from the given directory
-- `--personality kramden`: build the 'kramden' image personality rather than the default 'base' personality
-- `--use-production-ostree`: use a released version of Endless OS, rather than a nightly build
-- `eos4.0`: use the stable branch of Endless OS, rather than the development (`master`) branch
+| Parameter(s) | Meaning |
+| ------------ | ------- |
+| `--localdir ./kramden-image-config` | Load additional configuration from this repository |
+| `--personality kramden` | Build the `kramden` image personality defined in this repository, rather than the default (`base`) |
+| `--use-production-ostree` | Use a released version of Endless OS, rather than a nightly build |
+| `eos4.0` | Use the `eos4.0` branch of Endless OS, rather than the development branch (`master`) |
+
 
 When the image has been successfully built, the output can be found in
 `/var/cache/eos-image-builder/tmp/`.
